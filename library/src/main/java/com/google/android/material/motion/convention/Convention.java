@@ -13,10 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 package com.google.android.material.motion.convention;
 
 /**
- * Created by markwei on 6/1/16.
+ * Convention library class.
  */
 public class Convention {
   public static final String LIBRARY_NAME = "Convention";
