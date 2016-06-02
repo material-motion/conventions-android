@@ -23,7 +23,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 /**
- * Created by markwei on 5/26/16.
+ * Convention sample Activity.
  */
 public class MainActivity extends AppCompatActivity {
 
