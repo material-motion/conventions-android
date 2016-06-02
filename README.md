@@ -3,12 +3,12 @@
 The file system structure in this repo defines the conventions for a shared Android library.
 
     LibraryName/
-      .editorconfig           <- Libraries are expected to follow a standard format.
-      build.gradle            <- Libraries should support the Gradle build system.
+      .editorconfig             <- Libraries are expected to follow a standard format.
+      build.gradle              <- Libraries should support the Gradle build system.
 
-      LICENSE                 <- License.
-      README.md               <- Essential installation and usage guide.
-      CONTRIBUTING.md         <- Details for external contributors.
+      LICENSE                   <- License.
+      README.md                 <- Essential installation and usage guide.
+      CONTRIBUTING.md           <- Details for external contributors.
 
       library/                  <- The library module.
         build.gradle            <- Gradle build file for the library.
@@ -19,7 +19,7 @@ The file system structure in this repo defines the conventions for a shared Andr
             res/                <- Android resources.
           androidTest/          <- Tests.
 
-      sample/                  <- The sample module.
+      sample/                   <- The sample module.
         build.gradle            <- Gradle build file for the sample.
         src/
           main/                 <- The code for the sample.
