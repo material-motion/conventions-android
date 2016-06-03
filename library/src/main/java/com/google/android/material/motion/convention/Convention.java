@@ -20,5 +20,6 @@ package com.google.android.material.motion.convention;
  * Convention library class.
  */
 public class Convention {
+
   public static final String LIBRARY_NAME = "Convention";
 }

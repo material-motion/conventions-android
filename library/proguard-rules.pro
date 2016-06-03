@@ -8,3 +8,9 @@
 #   http://developer.android.com/guide/developing/tools/proguard.html
 
 # Add any project specific keep options here:
+
+-keep @android.support.annotation.Keep class *
+
+-keepclassmembers class * {
+   @android.support.annotation.Keep *;
+}

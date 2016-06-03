@@ -1,24 +1,31 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+  compileSdkVersion 23
+  buildToolsVersion "23.0.2"
 
-    defaultConfig {
-        applicationId "com.google.android.material.motion.convention.sample"
-        minSdkVersion 16
-        targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
-        consumerProguardFiles 'proguard-rules.pro'
-    }
+  defaultConfig {
+    applicationId "com.google.android.material.motion.convention.sample"
+    minSdkVersion 16
+    targetSdkVersion 23
+    versionCode 1
+    versionName "1.0"
+    consumerProguardFiles 'proguard-rules.pro'
+  }
 
-    lintOptions {
-      abortOnError false
+  lintOptions {
+    abortOnError false
+  }
+
+  buildTypes {
+    release {
+      minifyEnabled true
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
     }
+  }
 }
 
 dependencies {
-    compile project(':library')
-    compile 'com.android.support:appcompat-v7:23.4.0'
+  compile project(':library')
+  compile 'com.android.support:appcompat-v7:23.4.0'
 }
