@@ -134,3 +134,6 @@ replace
 # Delete empty old paths
 
 find $ROOT -type d -empty -delete
+
+# Delete the bootstrap script
+rm -- "$0"
