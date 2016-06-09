@@ -28,13 +28,13 @@ if [ "$#" -lt 4 ]; then
   exit -1
 fi
 
-LIBRARY_NAME="$1"
-PACKAGE_NAME="$2"
+LIBRARY_NAME="$(echo $1 | tr -d ' ')"
+PACKAGE_NAME="$(echo $2 | tr -d ' ')"
 PACKAGE_SAMPLE_NAME="$PACKAGE_NAME.sample"
 PACKAGE_PATH="$(echo $PACKAGE_NAME | tr . /)"
 PACKAGE_SAMPLE_PATH="$PACKAGE_PATH/sample"
-GITHUB_GROUP="$3"
-GITHUB_REPO="$4"
+GITHUB_GROUP="$(echo $3 | tr -d ' ')"
+GITHUB_REPO="$(echo $4 | tr -d ' ')"
 
 CONVENTION_PACKAGE_NAME="com.google.android.material.motion.convention"
 CONVENTION_PACKAGE_SAMPLE_NAME="$CONVENTION_PACKAGE_NAME.sample"
