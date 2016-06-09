@@ -45,6 +45,21 @@ CONVENTION_GITHUB_REPO="github-repo"
 
 ROOT="$(dirname $0)"
 
+# Set up new repo
+
+rm -rf .git/
+git init &>/dev/null
+git remote add origin "git@github.com:$GITHUB_GROUP/$GITHUB_REPO.git"
+echo "Reset git repository to git@github.com:$GITHUB_GROUP/$GITHUB_REPO.git"
+
+# Initial commit
+
+git add -A
+git commit -m "Initial import from conventions-android" &>/dev/null
+echo "Created initial commit for import"
+
+# Replace all files
+
 replace() {
   mkdir -p  "$NEW_PATH"
 
@@ -135,3 +150,13 @@ replace
 
 # Delete the bootstrap script
 rm -- "$0"
+
+# Second commit
+
+git add -A
+git commit -m "Ran script $0 $*" &>/dev/null
+echo "Created second commit for replacement"
+
+echo
+echo "Bootstrap script done. You now have two commits in a new git history. Optionally modify the README.md, then run"
+echo " $ git push -u origin master"

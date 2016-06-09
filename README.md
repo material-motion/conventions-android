@@ -36,6 +36,17 @@ and github repo.
 
 Example usage:
 
-    # Create ~/MyLibrary and populate with this repo.
-    cd ~/MyLibrary
-    ./bootstrap.sh MyLibrary com.example.library github-username github-repo
+1. Create new Github repository `github-repo` in Github group `github-username`.
+1. Clone this `android-conventions` repo into a local directory `~/github/github-repo`.
+```
+$ git clone git@github.com:material-motion/material-motion-conventions-android.git ~/github/github-repo
+$ cd ~/github/github-repo
+```
+1. Run bootstrap.sh script.
+```
+$ ./bootstrap.sh MyLibrary com.example.library github-username github-repo
+```
+1. Push to new repo.
+```
+$ git push -u origin master
+```
