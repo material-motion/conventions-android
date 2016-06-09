@@ -58,7 +58,7 @@ replace() {
   sed -i  "s|$CONVENTION_GITHUB_GROUP|$GITHUB_GROUP|g"  "$NEW_FILE"
   sed -i  "s|$CONVENTION_GITHUB_REPO|$GITHUB_REPO|g"    "$NEW_FILE"
 
-  find $OLD_PATH -type d -empty -delete
+  find $OLD_PATH -maxdepth 0 -type d -empty -delete
 }
 
 # Library source
