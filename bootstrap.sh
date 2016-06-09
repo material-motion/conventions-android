@@ -72,8 +72,6 @@ replace() {
   sed -i  "s|$CONVENTION_PACKAGE_PATH|$PACKAGE_PATH|g"  "$NEW_FILE"
   sed -i  "s|$CONVENTION_GITHUB_GROUP|$GITHUB_GROUP|g"  "$NEW_FILE"
   sed -i  "s|$CONVENTION_GITHUB_REPO|$GITHUB_REPO|g"    "$NEW_FILE"
-
-  find $OLD_PATH -maxdepth 0 -type d -empty -delete
 }
 
 # Library source
@@ -147,6 +145,10 @@ NEW_PATH="$ROOT"
 OLD_FILE="$OLD_PATH/LIBRARY_README.md"
 NEW_FILE="$NEW_PATH/README.md"
 replace
+
+# Delete old empty dirs
+
+find $ROOT -type d -empty -delete
 
 # Delete the bootstrap script
 rm -- "$0"
