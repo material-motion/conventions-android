@@ -30,6 +30,6 @@ choose the root `build.gradle` file.
 
 Run `./gradlew installDebug` from the project root.
 
-## License ##
+## License
 
-[Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0)
+Licensed under the Apache 2.0 license. See LICENSE for details.
