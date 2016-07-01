@@ -50,3 +50,7 @@ $ ./bootstrap.sh MyLibrary com.example.library github-username github-repo
 ```
 $ git push -u origin master
 ```
+
+## License
+
+Licensed under the Apache 2.0 license. See LICENSE for details.
