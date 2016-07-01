@@ -29,3 +29,7 @@ choose the root `build.gradle` file.
 ### Building the sample
 
 Run `./gradlew installDebug` from the project root.
+
+## License ##
+
+[Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0)
