@@ -27,29 +27,15 @@ The file system structure in this repo defines the conventions for a shared Andr
             java/               <- Java source files.
             res/                <- Android resources.
 
-## Bootstrap script
+## Creating a new Material Motion Android library
 
-The bootstrap script creates the skeletal directory structure for an
-Android library repo.
-This script must be provided a library name, package name, github group,
-and github repo.
+Run the following commands to create a new Android library:
 
-Example usage:
+    mdm new repo <name>
+    cd $(mdm dir <name>)
 
-1. Create new Github repository `github-repo` in Github group `github-username`.
-1. Clone this `android-conventions` repo into a local directory `~/github/github-repo`.
-```
-$ git clone git@github.com:material-motion/material-motion-conventions-android.git ~/github/github-repo
-$ cd ~/github/github-repo
-```
-1. Run bootstrap.sh script.
-```
-$ ./bootstrap.sh MyLibrary com.example.library github-username github-repo
-```
-1. Push to new repo.
-```
-$ git push -u origin master
-```
+- [Documentation for `mdm`](https://github.com/material-motion/material-motion-team/tree/develop/contributor_tools/mdm)
+- [Documentation for `mdm new`](https://github.com/material-motion/material-motion-team/tree/develop/contributor_tools/new)
 
 ## License
 
